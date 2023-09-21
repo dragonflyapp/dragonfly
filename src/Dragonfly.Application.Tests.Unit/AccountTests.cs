@@ -16,7 +16,7 @@ namespace Dragonfly.Application.Tests.Unit;
 public class AccountTests
 {
     [Fact]
-    public void CalculateBalance_ShouldReturnCorrectBalance_WhenTransactionExists()
+    public void CalculateBalance_ShouldReturnCorrectBalance_WhenAccountAndTransactionSameCurrency()
     {
         // Arrange
         Transaction transaction1 = new Transaction
