@@ -34,7 +34,8 @@ public class AccountServiceTests
         Account account = new Account
         {
             Id = new Guid(),
-            Name = "TestAccount"
+            Name = "TestAccount",
+            Currency = "USD"
         };
 
         _accountRepository.CreateAsync(account).Returns(true);
